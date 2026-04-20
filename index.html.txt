@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Deepak ??</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+}
+.container {
+    padding: 40px;
+}
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #ff5e78;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.section {
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="start">
+    <h1>Hey Deepak… ??</h1>
+    <p>Don’t click this unless you’re ready ??</p>
+    <button onclick="showOptions()">I’m not ready</button>
+    <button onclick="showOptions()">Okay… maybe</button>
+    <button onclick="showStory()">Fine, show me ??</button>
+</div>
+
+<div class="container hidden" id="story">
+
+    <div class="section">
+        <h2>The day you became important…</h2>
+        <p>I don’t even remember the exact moment… but somewhere between random talks and stupid laughs… you became someone I can’t ignore anymore.</p>
+    </div>
+
+    <div class="section">
+        <h2>Things I never say out loud…</h2>
+        <p>I act normal… but your texts matter. Your mood matters. You matter more than I admit.</p>
+    </div>
+
+    <div class="section">
+        <h2>Why you… out of everyone…</h2>
+        <p>Because you stayed. Because you understand. Because with you… things feel easy, real… and safe.</p>
+    </div>
+
+    <div class="section">
+        <h1>Happy Birthday Deepak ??</h1>
+        <p>I may not give you something big… but this is a small piece of my heart for you.</p>
+    </div>
+
+</div>
+
+<script>
+function showOptions() {
+    alert("Hmm… I think you ARE ready ??");
+}
+
+function showStory() {
+    document.getElementById("start").classList.add("hidden");
+    document.getElementById("story").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
